@@ -20,12 +20,12 @@ function App() {
             <Route path='/' exact component={Home} />
             <Route path='/about' component={About} />
             <Route path='/team' component={Teams} />
-            {/* <Route path='/blogs' component={
+            <Route path='/egg' component={
               () => { 
                 window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'; 
                 return null;}
               }
-            /> */}
+            />
           </Switch>
         </Router>
     </div>
