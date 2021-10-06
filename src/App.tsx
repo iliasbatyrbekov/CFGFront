@@ -1,15 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+// import React from 'react';
+// import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
 import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Teams from './pages/team';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
+
+      </header>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/team' component={Teams} />
+            {/* <Route path='/blogs' component={
+              () => { 
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'; 
+                return null;}
+              }
+            /> */}
+          </Switch>
+        </Router>
+    </div>
+  );
+}
+
+export default App;
+
+
+/*
+
+<p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <span>
@@ -50,9 +78,5 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+*/
