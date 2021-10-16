@@ -1,16 +1,29 @@
 import React from 'react';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
-import PersonIcon from '@mui/icons-material/Person';
-  
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemText from '@mui/material/ListItemText';
+// import ListItemAvatar from '@mui/material/ListItemAvatar';
+// import Avatar from '@mui/material/Avatar';
+// import PersonIcon from '@mui/icons-material/Person';
+
+import pastImg from "../assets/past.png";
+const fsImg = {
+  width: "100vw",
+  // height:"100vh"
+}
 const Teams = () => {
   return (
     <div>
-      <h1>Hello, we are Team 4 Good</h1>
-      <List sx={{ width: '100%', maxWidth: 360, alignItems:"flex-start", bgcolor: 'secondary.1' }}>
+      <img style={fsImg} src={pastImg} alt="a problem" />
+      
+    </div>
+  );
+};
+  
+export default Teams;
+
+/*
+<List sx={{ width: '100%', maxWidth: 360, alignItems:"flex-start", bgcolor: 'secondary.1' }}>
       <ListItem>
         <ListItemAvatar>
           <Avatar>
@@ -60,8 +73,4 @@ const Teams = () => {
         <ListItemText primary="Ilias" secondary="Batyrbekov" />
       </ListItem>
     </List>
-    </div>
-  );
-};
-  
-export default Teams;
+*/

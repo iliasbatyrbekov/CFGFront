@@ -1,39 +1,50 @@
-/* .App {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+body {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  /* background-image: url("./assets/bg.png"); */
+  background-position: top top;
+  background-size: cover;
+  margin: 0;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
+  background: black;
+  background: linear-gradient(
+    0deg,
+    black 0%,
+    rgba(49, 49, 177, 1) 50%,
+    black 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  margin: 15% auto;
+}
+.col-4 {
+  width: 25%;
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1100px;
+  }
+  h1 {
+    font-size: 58px;
   }
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */

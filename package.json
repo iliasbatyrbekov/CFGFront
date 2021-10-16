@@ -17,10 +17,12 @@
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react-dom": "^16.9.14",
+    "moment": "2.29.1",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-pdf": "^5.4.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
@@ -51,6 +53,7 @@
   "devDependencies": {
     "@types/react": "^16.14.16",
     "@types/react-beautiful-dnd": "^13.1.2",
+    "@types/react-pdf": "^5.0.7",
     "@types/react-redux": "^7.1.18",
     "@types/react-router-dom": "^5.3.0",
     "@types/styled-components": "^5.1.14"

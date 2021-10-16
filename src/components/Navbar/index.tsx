@@ -15,15 +15,15 @@ const Navbar = () => {
         <Bars />
   
         <NavMenu>
-          <NavLink to='/' >
+          <NavLink to='/home' >
             Home
           </NavLink>
           <NavLink to='/about' > 
           {/* activeStyle */}
             About
           </NavLink>
-          <NavLink to='/team' >
-            Team
+          <NavLink to='/past' >
+            Past Event
           </NavLink>
           <NavLink to='/egg' >
             Easter Egg

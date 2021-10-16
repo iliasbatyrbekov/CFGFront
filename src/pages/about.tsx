@@ -1,9 +1,19 @@
 import React from 'react';
+import aboutImg from "../assets/about.png";
+const fsImg = {
+  width: "100vw",
+  // height:"100vh"
+}
+const blackBG = {
+  width: "100vw",
+  height:"100vh",
+  backgraoundColor:"black"
+}
   
 const About = () => {
   return (
-    <div>
-      <h1>About our project:</h1>
+    <div style={blackBG}>
+      <img style={fsImg} src={aboutImg} alt="proble," />
     </div>
   );
 };
