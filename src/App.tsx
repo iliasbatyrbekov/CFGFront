@@ -3,7 +3,7 @@
 // import { Counter } from './features/counter/Counter';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Teams from './pages/team';
