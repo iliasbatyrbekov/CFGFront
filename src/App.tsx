@@ -20,10 +20,10 @@ function App() {
         <Router>
           <Navbar />
           <Switch>
-            <Route exact path="/">
+            {/* <Route exact path="/">
                 <Redirect to="/home" />
-            </Route>
-            <Route path='/home' exact component={Home} />
+            </Route> */}
+            <Route path='/' exact component={Home} />
             <Route path='/about' component={About} />
             <Route path='/past' component={Teams} />
             <Route path='/egg' component={
