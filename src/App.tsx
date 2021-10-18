@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
-import Teams from './pages/team';
+// import Teams from './pages/team';
 
 // import Optin from "./components/Optin/Optin";
 
@@ -25,7 +25,13 @@ function App() {
             </Route> */}
             <Route path='/' exact component={Home} />
             <Route path='/about' component={About} />
-            <Route path='/past' component={Teams} />
+            {/* <Route path='/past' component={Teams} /> */}
+            <Route path='/past' component={
+              () => { 
+                window.location.href = 'https://cityu-hall2.github.io/cityhack21/index.html'; 
+                return null;}
+              }
+            />
             <Route path='/egg' component={
               () => { 
                 window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'; 
